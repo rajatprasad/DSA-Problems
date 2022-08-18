@@ -14,10 +14,6 @@ var threeSum = function(nums) {
 
     for(let i = 0; i < nums.length; i++) {
         
-        // once this number hits 0, there's no need to go further since
-		// positive numbers cannot sum to a negative number (optional)
-		if (nums[i] > 0) break
-        
         // we don't want repeats, so skip numbers we've already seen
         if(nums[i] === nums[i - 1])
             continue
