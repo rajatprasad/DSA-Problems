@@ -10,8 +10,7 @@
 class MinStack {
     
     constructor() {
-        this.storage = {};
-        this.size = 0;
+        this.storage = [];
         this.min = [] ;
     }
     
@@ -22,8 +21,7 @@ class MinStack {
             this.min.push(Math.min(this.min[this.min.length - 1], val));
         }
         
-        this.size++;
-        this.storage[this.size] = val;
+        this.storage.push(val);
     }
     
     pop() {
@@ -31,16 +29,12 @@ class MinStack {
         if(this.storage.length !== 0) {
             
             this.min.pop();
-        
-            let removed = this.storage[this.size];
-            delete this.storage[this.size];
-            this.size--;
-            return removed;
+            this.storage.pop()
         }  
     }
     
     top() {
-        return this.storage[this.size];
+        return this.storage[this.storage.length - 1];
     }
     
     getMin() {
