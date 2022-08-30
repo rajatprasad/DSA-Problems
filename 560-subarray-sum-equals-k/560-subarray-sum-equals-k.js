@@ -11,7 +11,7 @@ var subarraySum = function(nums, k) {
     for(let i = 0; i < nums.length; i++) {
         currentSum = currentSum + nums[i];
         
-        if(currentSum - k === 0)
+        if(currentSum === k)
             count++;
         
         if(map[currentSum - k] !== undefined)
