@@ -14,12 +14,12 @@ var diameterOfBinaryTree = function(root) {
     let diameter = 0;
     
     function height(root) {
-        if(root == null) return 0;
+        if(root == null) return -1;
         
         const leftHeight = height(root.left);
         const rightHeight = height(root.right);
         
-        diameter = Math.max(diameter, leftHeight + rightHeight);
+        diameter = Math.max(diameter, 2 + leftHeight + rightHeight);
         
         return 1 + Math.max(leftHeight, rightHeight);
     }
