@@ -25,8 +25,8 @@ var letterCombinations = function(digits) {
         let value = mapping[num];
         
         for(let i = 0; i < value.length; i++) {
-            let temp =  combination + value[i]
-            helper(digits, index + 1, temp, mapping, res);
-            // temp.splice(-1, 1);
+            let temp =  combination + value[i];              
+            helper(digits, index + 1, temp, mapping, res);   
+           temp = temp.slice(0, -1);
         }
     }
