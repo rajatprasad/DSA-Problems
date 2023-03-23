@@ -7,7 +7,7 @@
 
 <pre><strong>Input:</strong> s = "A man, a plan, a canal: Panama"
 <strong>Output:</strong> true
-<strong>Explanation:</strong> "amanaplanacanalpanama" is a palindrome..
+<strong>Explanation:</strong> "amanaplanacanalpanama" is a palindrome.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
