@@ -3,7 +3,7 @@
 <p>A subtree of a binary tree <code>tree</code> is a tree that consists of a node in <code>tree</code> and all of this node's descendants. The tree <code>tree</code> could also be considered as a subtree of itself.</p>
 
 <p>&nbsp;</p>
-<p><strong class="example1">Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/04/28/subtree1-tree.jpg" style="width: 532px; height: 400px;">
 <pre><strong>Input:</strong> root = [3,4,5,1,2], subRoot = [4,1,2]
 <strong>Output:</strong> true
